@@ -1,0 +1,27 @@
+.ps.ps-alternate {
+  .ps__wrap {
+    //max-width: 100%;
+  }
+
+  p, li {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  ol {
+    list-style-position: inside;
+  }
+
+  .ps__kicker {
+    margin-bottom: 0;
+  }
+
+  .ps__title h1 {
+    font-size: 2rem;
+    margin-bottom: #{0.25 * $spacing};
+  }
+
+  .ps__desc p {
+    margin-bottom: #{0.125 * $spacing};
+  }
+}

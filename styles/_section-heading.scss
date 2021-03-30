@@ -1,0 +1,34 @@
+.section.heading {
+  position: relative;
+  background: #f7f7f7;
+  color: #111;
+  text-align: center;
+
+  @include flex-center();
+
+  .title {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: #{0.25 * $spacing};
+
+    @include respond-until($screen-xs) {
+      font-size: 2.6rem;
+    }
+  }
+
+  .title.subheader {
+    font-size: 2.6rem;
+
+    @include respond-until($screen-xs) {
+      font-size: 2.2rem;
+    }
+  }
+
+  .lead {
+    max-width: $max-p-width;
+  }
+
+  .lead a {
+    color: #111;
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "text_block",
+  "type": "SharedSlice",
+  "name": "TextBlock",
+  "description": "TextBlock",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextBlock",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Titel",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "Tekst",
+            "placeholder": "Een paragraaf tekst",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          },
+          "type": "StructuredText"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

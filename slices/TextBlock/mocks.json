@@ -1,0 +1,21 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "TextBlock",
+    "primary": {
+      "title": "Een eventuele subkop",
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Esse et elit eiusmod nisi fugiat deserunt Lorem nisi ipsum labore nisi dolore ad.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [],
+    "slice_type": "text_block"
+  }
+]

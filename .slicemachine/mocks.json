@@ -1,0 +1,39 @@
+{
+  "JumboHeader": {},
+  "TextBlock": {
+    "primary": {
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "title": {
+        "content": "Een eventuele subkop"
+      }
+    }
+  },
+  "ChapterHeading": {
+    "primary": {
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "CustomAccordion": {
+    "items": {
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "title": {
+        "content": null
+      }
+    }
+  }
+}

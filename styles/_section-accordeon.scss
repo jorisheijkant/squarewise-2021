@@ -1,0 +1,19 @@
+.ps.ps-accordion {
+  .ps__wrap {
+    max-width: calc(40em + calc(var(--c-padding)) + 4em);
+  }
+
+  .ps__main.grid {
+    margin-top: 0;
+  }
+
+  .c-accordion__panel.c-accordion__panel {
+    @include respond-until($screen-xs) {
+      padding-right: var(--c-padding);
+    }
+  }
+
+  p {
+    max-width: $max-p-width;
+  }
+}

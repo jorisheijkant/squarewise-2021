@@ -1,0 +1,35 @@
+.navbar-wrapper {
+  @include wh(100%, 50px);
+  @include flex-center();
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $white;
+  z-index: 4;
+
+  overflow: hidden;
+}
+
+.navbar {
+  @include wh(100%, 50px);
+  max-width: $max-width;
+  border-bottom: 1px solid $light-grey;
+
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+
+  .nav-logo {
+    @include flex-center();
+
+    .logo-img {
+      @include wh(80px, auto);
+    }
+  }
+
+  .menu-toggle {
+    @include flex-center();
+    .burger-icon {
+      @include wh(30px);
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "vue-essential-slices",
+  "version": "0.3.0",
+  "description": "A set of professionally made, accessible Vue components, linked to a (Prismic) backend",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "start-storybook",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-storybook": "build-storybook",
+    "prepack": "yarn bundle",
+    "bundle": "node ./node_modules/sm-commons/scripts/bundle",
+    "storybook": "start-storybook -p 6006"
+  },
+  "pre-commit": [
+    "bundle"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prismicio/vue-essential-slices.git"
+  },
+  "keywords": [
+    "Nuxtjs",
+    "Vuejs",
+    "Prismic",
+    "slices"
+  ],
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/prismicio/vue-essential-slices/issues"
+  },
+  "homepage": "https://github.com/prismicio/vue-essential-slices#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@prismicio/vue": "^2.0.2",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/source-loader": "^5.3.19",
+    "@storybook/vue": "^5.3.18",
+    "@vue/babel-preset-app": "^4.2.3",
+    "@vue/component-compiler-utils": "^3.1.1",
+    "babel-loader": "^8.0.6",
+    "babel-preset-vue": "^2.0.2",
+    "node-sass": "^4.14.1",
+    "pre-commit": "^1.2.2",
+    "prismic-dom": "^2.1.0",
+    "prismic-javascript": "^2.1.5",
+    "sass-loader": "^8.0.2",
+    "sm-commons": "^0.0.23",
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-loader": "^15.9.2",
+    "vue-slicezone": "^0.0.25",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,14 @@
+.ps.ps-slider--testimonials {
+  .ps__main.grid {
+    margin-top: 0;
+  }
+
+  .ps-carousel__testimonial__content p {
+    font-size: 1rem;
+    max-width: $max-p-width;
+  }
+
+  .ps-carousel__testimonial__author {
+    font-size: 1.4rem;
+  }
+}

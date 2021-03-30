@@ -1,0 +1,6 @@
+.header {
+  @include wh(100%, auto);
+  @include flex-center();
+  min-height: calc(100vh - 50px);
+  padding: $spacing;
+}

@@ -1,0 +1,35 @@
+.menu {
+  position: fixed;
+  @include wh(100vw, calc(100vh - 50px));
+  top: 50px;
+  left: 0;
+
+  transform: translateY(-100vh);
+
+  background: $white;
+  z-index: 3;
+  padding: $spacing;
+
+  transition: transform 0.3s ease;
+
+  &__heading {
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+
+  &__items {
+    @include wh(100%, auto);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: #{0.5 * $spacing};
+
+    .menu-item {
+      text-align: left;
+      text-decoration: underline;
+    }
+  }
+}
+
+.menu.open {
+  transform: translateY(0);
+}

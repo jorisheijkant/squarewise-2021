@@ -1,0 +1,27 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "JumboHeader",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Ut id anim laborum veniam minim.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Magna irure non duis.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [],
+    "slice_type": "jumbo_header"
+  }
+]

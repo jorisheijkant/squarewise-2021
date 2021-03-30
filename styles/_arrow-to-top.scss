@@ -1,0 +1,14 @@
+.arrow-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+
+  z-index: 2;
+
+  img {
+    @include wh(40px);
+    transform: rotate(180deg);
+  }
+
+}

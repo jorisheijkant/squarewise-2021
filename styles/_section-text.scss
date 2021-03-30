@@ -1,0 +1,11 @@
+.section.text {
+  @include flex-center();
+  p {
+    max-width: $max-p-width;
+  }
+
+  p a {
+    color: #111;
+    text-decoration: underline;
+  }
+}
