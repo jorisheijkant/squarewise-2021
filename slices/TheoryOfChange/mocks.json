@@ -1,0 +1,68 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "TheoryOfChange",
+    "primary": {
+      "visionText": [
+        {
+          "type": "paragraph",
+          "text": "Occaecat qui voluptate sit do incididunt culpa ea commodo velit sit cillum duis.",
+          "spans": []
+        }
+      ],
+      "impactText": [
+        {
+          "type": "paragraph",
+          "text": "Consequat laborum pariatur aute cupidatat est excepteur in. Esse voluptate amet velit ut nulla.",
+          "spans": []
+        }
+      ],
+      "outcomesText": [
+        {
+          "type": "paragraph",
+          "text": "Culpa enim aute magna exercitation enim incididunt consequat Lorem esse.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "outcomeTitle": "expedite one-to-one interfaces",
+        "outcomeClassName": "reinvent innovative systems",
+        "outcomeText": [
+          {
+            "type": "paragraph",
+            "text": "Minim eu labore dolore ea eiusmod reprehenderit. Do exercitation occaecat exercitation cillum ullamco amet proident dolore.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "outcomeTitle": "recontextualize integrated systems",
+        "outcomeClassName": "generate plug-and-play interfaces",
+        "outcomeText": [
+          {
+            "type": "paragraph",
+            "text": "Enim consequat sit sit proident. Tempor proident excepteur pariatur occaecat aliqua velit consequat qui proident velit labore fugiat esse.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "outcomeTitle": "recontextualize dot-com niches",
+        "outcomeClassName": "transition wireless platforms",
+        "outcomeText": [
+          {
+            "type": "paragraph",
+            "text": "In aliqua cupidatat nostrud laborum ex velit eiusmod laborum et aliquip. Anim reprehenderit adipisicing pariatur deserunt anim. Eu culpa consequat sint proident laboris.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "slice_type": "theory_of_change"
+  }
+]

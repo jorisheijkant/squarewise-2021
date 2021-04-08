@@ -63,6 +63,10 @@ export default {
         items: {
             type: Array,
             required: true
+        },
+        closed:{
+            type: Boolean,
+            required: false
         }
     },
     data() {
@@ -83,7 +87,6 @@ export default {
             return item.display !== undefined ? !item.display : true
         },
         togglePanel(event, elemIndex) {
-            console.log('Now toggling panel', elemIndex);
             this.dataItems = this.dataItems.map((item, i) => ({
                 ...item,
                 display:
@@ -93,7 +96,7 @@ export default {
             }))
         },
         openFirstItem() {
-            if(this.dataItems && this.dataItems.length > 0) {
+            if(this.dataItems && this.dataItems.length > 0 && !this.closed) {
                 this.togglePanel(null, 0)
             }
         }

@@ -4,5 +4,8 @@
   },
   "Navigation": {
     "description": "Auto imported from components/navigation.vue"
+  },
+  "SquarewiseFooter": {
+    "description": "Auto imported from components/squarewise-footer.vue"
   }
 }

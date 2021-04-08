@@ -1,0 +1,43 @@
+{
+  "id": "custom_accordion",
+  "type": "SharedSlice",
+  "name": "CustomAccordion",
+  "description": "CustomAccordion",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CustomAccordion",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        }
+      },
+      "items": {
+        "title": {
+          "config": {
+            "label": "Kop",
+            "placeholder": "De kop van de uitklapper"
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "Tekst",
+            "placeholder": "De tekst in de uitklapper",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,em,hyperlink,list-item,o-list-item,paragraph"
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}

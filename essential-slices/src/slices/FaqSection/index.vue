@@ -8,7 +8,7 @@
 					</ps-eyebrow>
 					<ps-title :field="slice.primary.title" :theme="theme.title" :align="theme.align" :color="theme.color" />
 				</header>
-				<ps-description :field="slice.primary.description" :theme="theme.description" :align="theme.align" :color="theme.color" />
+<!--				<ps-description :field="slice.primary.description" :theme="theme.description" :align="theme.align" :color="theme.color" />-->
 			</div>
 			<div class="ps__main grid grid--12">
 				<div v-if="hasImage" class="span-1-6">
@@ -17,7 +17,7 @@
 					</div>
 				</div>
 				<div :class="`${hasImage ? 'span-7-12' : 'span-1-12'}`">
-					<ps-accordion :items="slice.items" />
+					<ps-accordion :closed="isClosed" :items="slice.items" />
 				</div>
 			</div>
 		</div>
@@ -52,7 +52,19 @@ export default {
 				this.slice.primary.optional_image &&
 				Object.keys(this.slice.primary.optional_image).length !== 0
 			)
-		}
+		},
+
+        isClosed() {
+		    if(this.slice.primary && this.slice.primary.description && this.slice.primary.description.length > 0) {
+		        if(this.slice.primary.description[0] && this.slice.primary.description[0].text) {
+		            return this.slice.primary.description[0].text === 'closed';
+                } else {
+		            return false;
+                }
+            } else {
+		        return false;
+            }
+        }
 	}
 }
 </script>

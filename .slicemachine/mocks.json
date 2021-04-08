@@ -35,5 +35,68 @@
         "content": null
       }
     }
-  }
+  },
+  "ProjectList": {
+    "items": {
+      "projectName": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "companyName": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "TheoryOfChange": {
+    "primary": {
+      "visionText": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "impactText": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "outcomesText": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "items": {
+      "outcomeTitle": {
+        "content": null
+      },
+      "outcomeClassName": {
+        "content": null
+      },
+      "outcomeText": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "InterviewQa": {
+    "items": {
+      "answer": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "EmbedBlock": {}
 }

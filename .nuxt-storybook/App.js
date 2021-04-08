@@ -5,7 +5,7 @@ import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch,
 import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
-import '../node_modules/vue-essential-slices/src/styles/styles.scss'
+import '../essential-slices/src/styles/styles.scss'
 
 import '../styles/style.scss'
 

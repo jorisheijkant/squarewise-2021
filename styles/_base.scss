@@ -37,3 +37,7 @@ input, select, textarea, button {
 img {
 	border: 0; // Be kind for IE9
 }
+
+.container {
+	overflow-x: hidden;
+}

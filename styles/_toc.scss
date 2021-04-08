@@ -1,0 +1,45 @@
+.toc {
+  @include wh(100%, auto);
+  max-width: calc(40em + 6rem);
+  padding: $spacing;
+  margin: 0 auto;
+
+  @include respond-until($screen-xs) {
+    padding: #{0.5 * $spacing};
+    max-width: calc(40em + 3rem);
+  }
+
+  .toc-header {
+    font-size: 2rem;
+    color: $green;
+    margin: 0;
+  }
+
+  .toc-text {
+    max-width: $max-p-width;
+    margin: 0 0 #{0.5 * $spacing};
+
+    p {
+      margin: 0;
+    }
+
+    ul {
+      list-style-position: inside;
+    }
+  }
+
+  .outputs-wrapper {
+    margin: #{0.5 * $spacing} 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: #{0.25 * $spacing};
+
+    .output {
+      @include wh(100%, auto);
+      background: $grey;
+      border-radius: 8px;
+      padding: #{0.25 * $spacing};
+
+    }
+  }
+}

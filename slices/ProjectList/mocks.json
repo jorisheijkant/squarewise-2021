@@ -1,0 +1,142 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "ProjectList",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Mollit ut non minim ex.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Velit laboris eu amet pariatur eu duis consequat. Culpa cupidatat consequat esse deserunt ut.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "projectName": [
+          {
+            "type": "paragraph",
+            "text": "In anim eiusmod quis magna. Laboris quis enim cupidatat velit tempor cillum enim laboris sint minim.",
+            "spans": []
+          }
+        ],
+        "companyName": [
+          {
+            "type": "paragraph",
+            "text": "Eu excepteur laboris esse do culpa amet tempor deserunt proident velit aliquip culpa elit irure cupidatat.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "companyLogo": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
+        },
+        "innovaties": true,
+        "woningeigenaren": true,
+        "verdienmodellen": false,
+        "grondstoffen": false,
+        "empowerment": false,
+        "beperkteruimte": true,
+        "renovatieconcepten": false,
+        "koplopers": true,
+        "wijkaanpak": true
+      },
+      {
+        "projectName": [
+          {
+            "type": "paragraph",
+            "text": "Aliqua laboris sunt do amet anim eiusmod ullamco velit tempor adipisicing officia occaecat eu esse. Exercitation labore sint eiusmod.",
+            "spans": []
+          }
+        ],
+        "companyName": [
+          {
+            "type": "paragraph",
+            "text": "Tempor ullamco velit voluptate ea cillum ipsum fugiat ut sunt occaecat aliquip occaecat mollit. Cillum excepteur aliqua qui consequat fugiat cillum laboris est eiusmod aliqua deserunt nulla velit duis.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "companyLogo": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
+        },
+        "innovaties": false,
+        "woningeigenaren": false,
+        "verdienmodellen": true,
+        "grondstoffen": false,
+        "empowerment": true,
+        "beperkteruimte": false,
+        "renovatieconcepten": true,
+        "koplopers": false,
+        "wijkaanpak": false
+      },
+      {
+        "projectName": [
+          {
+            "type": "paragraph",
+            "text": "Mollit et irure tempor labore minim culpa ea consectetur. Aliqua et dolore sint nisi. Velit eiusmod velit consequat aliquip laborum sunt ipsum incididunt et ut elit deserunt non.",
+            "spans": []
+          }
+        ],
+        "companyName": [
+          {
+            "type": "paragraph",
+            "text": "Ullamco ut commodo officia commodo ipsum mollit sint enim aute. In amet eu excepteur amet ea veniam incididunt nostrud laboris. Cillum cupidatat Lorem ex occaecat magna incididunt nulla aliqua aliqua do exercitation eiusmod eu.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "companyLogo": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+        },
+        "innovaties": true,
+        "woningeigenaren": false,
+        "verdienmodellen": true,
+        "grondstoffen": true,
+        "empowerment": true,
+        "beperkteruimte": false,
+        "renovatieconcepten": true,
+        "koplopers": false,
+        "wijkaanpak": false
+      }
+    ],
+    "slice_type": "project_list"
+  }
+]

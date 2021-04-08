@@ -1,6 +1,9 @@
 <template>
     <section class="ps section text">
-        <prismic-rich-text :field="slice.primary.description"/>
+        <div class="text-wrapper">
+            <h4 class="title">{{ slice.primary.title }}</h4>
+            <prismic-rich-text :field="slice.primary.description"/>
+        </div>
     </section>
 </template>
 

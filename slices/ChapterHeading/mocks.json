@@ -1,0 +1,28 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "ChapterHeading",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Anim officia eiusmod aliquip mollit tempor consectetur nostrud.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Lorem enim occaecat Lorem culpa et irure irure cillum amet laborum duis esse dolor. Nulla et nisi fugiat. Proident Lorem id ut exercitation elit commodo non ea proident non mollit.",
+          "spans": []
+        }
+      ],
+      "headingType": "sectie"
+    },
+    "items": [],
+    "slice_type": "chapter_heading"
+  }
+]

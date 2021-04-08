@@ -10,6 +10,8 @@
 
         <!-- Rest of the content is from Prismic -->
         <SliceZone class="slice-wrapper" type="page" uid="dieke-schutjens" />
+
+        <squarewise-footer />
     </div>
 </template>
 

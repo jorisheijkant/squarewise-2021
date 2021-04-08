@@ -1,0 +1,63 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "InterviewQa",
+    "primary": {},
+    "items": [
+      {
+        "question": "benchmark integrated synergies",
+        "answer": [
+          {
+            "type": "paragraph",
+            "text": "Irure sint sint deserunt deserunt amet anim. Eu cupidatat do occaecat id eu.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "question": "monetize turn-key paradigms",
+        "answer": [
+          {
+            "type": "paragraph",
+            "text": "Enim ut sint laboris fugiat velit dolore est proident elit tempor anim. Ullamco qui exercitation exercitation eiusmod veniam. Id duis ad nostrud voluptate aute consequat officia reprehenderit et eiusmod labore tempor.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "question": "redefine web-enabled interfaces",
+        "answer": [
+          {
+            "type": "paragraph",
+            "text": "Deserunt nisi consequat minim ex deserunt mollit et voluptate ea eu laborum do minim in.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "question": "facilitate intuitive schemas",
+        "answer": [
+          {
+            "type": "paragraph",
+            "text": "Aliqua nulla voluptate aute consectetur.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "question": "engineer robust e-tailers",
+        "answer": [
+          {
+            "type": "paragraph",
+            "text": "Officia reprehenderit minim reprehenderit qui exercitation est labore nulla aliquip adipisicing velit ad quis id id. Cupidatat incididunt consequat sunt aute fugiat eiusmod consectetur esse non dolore ullamco reprehenderit aliqua reprehenderit.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "slice_type": "interview_qa"
+  }
+]

@@ -8,19 +8,21 @@
 
   .title {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin-bottom: #{0.25 * $spacing};
+    max-width: 20em;
 
     @include respond-until($screen-xs) {
-      font-size: 2.6rem;
+      font-size: 2rem;
     }
   }
 
   .title.subheader {
     font-size: 2.6rem;
+    max-width: $max-p-width;
 
     @include respond-until($screen-xs) {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
     }
   }
 

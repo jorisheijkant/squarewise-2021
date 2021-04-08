@@ -1,0 +1,13 @@
+.embed {
+  @include flex-center();
+  div {
+    width: 100%;
+    @include flex-center();
+  }
+
+  iframe {
+    width: 100%;
+    max-width: $max-p-width;
+    margin: 0 auto;
+  }
+}

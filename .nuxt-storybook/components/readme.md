@@ -8,3 +8,4 @@ You can directly use them in pages and other components without the need to impo
 
 - `<Logo>` | `<logo>` (components/Logo.vue)
 - `<Navigation>` | `<navigation>` (components/navigation.vue)
+- `<SquarewiseFooter>` | `<squarewise-footer>` (components/squarewise-footer.vue)

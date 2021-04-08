@@ -1,0 +1,61 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "CustomAccordion",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Aliquip velit dolor tempor non magna anim commodo sint qui. Reprehenderit ut sunt culpa. Elit ea ullamco adipisicing ut elit sit amet proident consectetur nostrud cillum.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": "productize synergistic networks",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Laboris adipisicing proident do incididunt nulla eiusmod sint do sint pariatur. Deserunt ex qui commodo eiusmod reprehenderit esse laboris dolore dolore tempor.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "title": "seize user-centric partnerships",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Duis tempor ut duis nulla aliqua. Lorem duis adipisicing reprehenderit magna elit eu consequat deserunt.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "title": "redefine integrated e-markets",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Laborum in elit cupidatat elit duis consectetur incididunt amet do consectetur nostrud sunt enim. Esse veniam laboris consectetur ut deserunt duis excepteur ex non ex reprehenderit.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "title": "unleash next-generation channels",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Officia non eiusmod ex laborum nostrud adipisicing do quis anim esse irure est Lorem. Reprehenderit eiusmod quis proident non consequat dolore sint consectetur velit.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "slice_type": "custom_accordion"
+  }
+]

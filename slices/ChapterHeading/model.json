@@ -1,0 +1,47 @@
+{
+  "id": "chapter_heading",
+  "type": "SharedSlice",
+  "name": "ChapterHeading",
+  "description": "ChapterHeading",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ChapterHeading",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "description": {
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your product",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          },
+          "type": "StructuredText"
+        },
+        "headingType": {
+          "config": {
+            "label": "Type hoofdstuk",
+            "placeholder": "",
+            "options": [
+              "sectie",
+              "subsectie"
+            ],
+            "default_value": "sectie"
+          },
+          "type": "Select"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

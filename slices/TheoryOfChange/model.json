@@ -1,0 +1,69 @@
+{
+  "id": "theory_of_change",
+  "type": "SharedSlice",
+  "name": "TheoryOfChange",
+  "description": "TheoryOfChange",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TheoryOfChange",
+      "primary": {
+        "visionText": {
+          "config": {
+            "label": "Tekst bij visieblok",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "impactText": {
+          "config": {
+            "label": "Tekst bij impactblok",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "outcomesText": {
+          "config": {
+            "label": "Tekst bij outcomesblok",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        }
+      },
+      "items": {
+        "outcomeTitle": {
+          "config": {
+            "label": "Titel outcome",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "outcomeClassName": {
+          "config": {
+            "label": "Naam klasse outcome (voor Joris)",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "outcomeText": {
+          "config": {
+            "label": "Tekst outcome",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}
