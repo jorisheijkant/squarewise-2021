@@ -4,4 +4,8 @@
   @include respond-until($screen-xs) {
     padding: #{0.5 * $spacing};
   }
+
+  .ps__kicker {
+    color: $green;
+  }
 }

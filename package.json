@@ -10,12 +10,13 @@
     "slicemachine": "start-slicemachine --port 9999",
     "storybook": "nuxt storybook",
     "build-storybook": "nuxt storybook build",
-    "deploy-test": "nuxt generate && rsync -arv ~/documents/dev/2021/squarewise-annual/dist/ joris@api.jorisheijkant.nl:/var/www/html/demo/squarewise/"
+    "deploy-test": "cross-env NODE_ENV=demo nuxt generate && rsync -arv ~/documents/dev/2021/squarewise-annual/dist/ joris@api.jorisheijkant.nl:/var/www/html/demo/squarewise/"
   },
   "dependencies": {
     "@nuxtjs/prismic": "^1.2.6",
     "@prismicio/vue": "^2.0.11",
     "core-js": "^3.9.1",
+    "cross-env": "^7.0.3",
     "nuxt": "^2.15.3",
     "nuxt-sm": "^0.0.6",
     "prismic-javascript": "^3.0.2",

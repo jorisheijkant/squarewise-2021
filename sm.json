@@ -2,7 +2,7 @@
   "apiEndpoint": "https://squarewise-2021.cdn.prismic.io/api/v2",
   "libraries": [
     "@/slices",
-    "vue-essential-slices"
+    "@/essential-slices/src/slices"
   ],
   "_latest": "0.0.45",
   "storybook": "http://localhost:3003"

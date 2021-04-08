@@ -1,5 +1,11 @@
 .ps.ps-slider--carousel {
+  color: $black;
+
   .c-carousel__card {
     justify-content: flex-start;
+  }
+
+  .c-carousel__card::after {
+    background: #fce1d1;
   }
 }

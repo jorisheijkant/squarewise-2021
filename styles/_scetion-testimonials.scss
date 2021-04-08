@@ -1,0 +1,25 @@
+.ps.ps-slider--testimonials {
+  .ps-carousel__testimonial {
+    background: #fff4d9;
+    padding: 2rem 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .ps-carousel__testimonial__footer {
+    margin-top: 5px;
+  }
+
+  .c-slider__dotNav {
+    .c-slider__dotNav__dot:before {
+      background: #869f8e;
+    }
+
+    .c-slider__dotNav__dot[aria-selected="true"]:before {
+      background: $green;
+    }
+
+    .dot-label {
+      display: none;
+    }
+  }
+}

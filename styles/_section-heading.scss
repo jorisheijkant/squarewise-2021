@@ -1,7 +1,7 @@
 .section.heading {
   position: relative;
-  background: #f7f7f7;
-  color: #111;
+  background: $green;
+  color: $white;
   text-align: center;
 
   @include flex-center();

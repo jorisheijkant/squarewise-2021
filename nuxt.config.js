@@ -8,6 +8,8 @@ if(process.env.NODE_ENV === 'demo') {
 }
 
 export default {
+    ssr: true,
+
     target: 'static',
 
     head: {
@@ -37,7 +39,7 @@ export default {
         }]
     },
 
-    css: ["vue-essential-slices/src/styles/styles.scss", "~/styles/style.scss"],
+    css: ["essential-slices/src/styles/styles.scss", "~/styles/style.scss"],
 
     plugins: [],
 

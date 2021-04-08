@@ -1,4 +1,6 @@
 .ps.ps-accordion {
+  color: $black;
+
   .ps__wrap {
     max-width: calc(40em + calc(var(--c-padding)) + 4em);
   }
@@ -7,7 +9,13 @@
     margin-top: 0;
   }
 
+  .c-accordion__heading button {
+    background: #fce1d1;
+  }
+
   .c-accordion__panel.c-accordion__panel {
+    background: #fce1d1;
+
     @include respond-until($screen-xs) {
       padding-right: var(--c-padding);
     }

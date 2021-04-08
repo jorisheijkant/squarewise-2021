@@ -75,11 +75,15 @@ export default {
             return `c-accordion-${Math.floor(Math.random() * 999)}`
         }
     },
+    mounted() {
+        this.openFirstItem();
+    },
     methods: {
         ariaHide(item) {
             return item.display !== undefined ? !item.display : true
         },
         togglePanel(event, elemIndex) {
+            console.log('Now toggling panel', elemIndex);
             this.dataItems = this.dataItems.map((item, i) => ({
                 ...item,
                 display:
@@ -87,6 +91,11 @@ export default {
                         ? Boolean(!item.display)
                         : !this.ariaAccOptions.showOneAnswerAtATime
             }))
+        },
+        openFirstItem() {
+            if(this.dataItems && this.dataItems.length > 0) {
+                this.togglePanel(null, 0)
+            }
         }
     }
 }
