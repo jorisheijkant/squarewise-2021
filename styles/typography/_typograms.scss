@@ -21,7 +21,7 @@ $breakpoints: (
 //
 
 // h1
-$h1-font-family: $merriweather;
+$h1-font-family: $source;
 $h1-font-sizes: (
         null  : (get-rems(28), 1.1),
         small : (get-rems(28), 1.1),
@@ -34,7 +34,7 @@ $h1: (
 );
 
 // h2
-$h2-font-family: $merriweather;
+$h2-font-family: $source;
 //$h2-leading: line-height(100,108);
 $h2-font-sizes: (
         null  : (get-rems(22), 1.1),
@@ -61,7 +61,7 @@ $h3: (
 );
 
 // h4
-$h4-font-family: $merriweather;
+$h4-font-family: $source;
 $h4-font-sizes: (
         null  : (get-rems(20), 1.1),
         small : (get-rems(20), 1.1),
@@ -74,7 +74,7 @@ $h4: (
 );
 
 // h5
-$h5-font-family: $merriweather;
+$h5-font-family: $source;
 $h5-font-sizes: (
         null  : (get-rems(16), 1.21),
         small : (get-rems(16), 1.21),
@@ -88,7 +88,7 @@ $h5: (
 );
 
 // h6
-$h6-font-family: $merriweather;
+$h6-font-family: $source;
 $h6-font-sizes: (
         null  : (get-rems(16), 1.21),
         small : (get-rems(16), 1.21),
@@ -163,7 +163,7 @@ $buttontype: (
 );
 
 // Blockquote
-$quote-font-family: $merriweather;
+$quote-font-family: $source;
 $quote-font-sizes: (
         null  : (get-rems(20), 1.2),
         small : (get-rems(20), 1.2),

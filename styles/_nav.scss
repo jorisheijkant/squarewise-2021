@@ -15,6 +15,7 @@
   max-width: $max-width;
   border-bottom: 1px solid $light-grey;
 
+
   display: grid;
   grid-template-columns: 100px auto 100px;
 
@@ -31,5 +32,14 @@
     .burger-icon {
       @include wh(30px);
     }
+  }
+}
+
+.progress-bar {
+  @include wh(100%, 2px);
+
+  .bar {
+    @include wh(2px, 2px);
+    background: $lightblue;
   }
 }
