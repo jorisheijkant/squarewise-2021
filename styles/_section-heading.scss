@@ -6,11 +6,18 @@
 
   @include flex-center();
 
+  .image {
+    @include wh(100%, auto);
+    max-width: 400px;
+    margin: 0 0 #{0.5 * $spacing};
+  }
+
   .title {
     font-weight: bold;
     font-size: 2.6rem;
     margin-bottom: #{0.25 * $spacing};
     max-width: 20em;
+    //color: $green;
 
     @include respond-until($screen-xs) {
       font-size: 2rem;
@@ -33,4 +40,9 @@
   .lead a {
     color: #111;
   }
+}
+
+.section.heading.onze-transitie-naar-een-horizontale-steward-owned-organisatie {
+  background: $yellow;
+  color: $black;
 }

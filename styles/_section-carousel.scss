@@ -8,4 +8,10 @@
   .c-carousel__card::after {
     background: #fce1d1;
   }
+
+  .c-carousel__paddleNav {
+    @include respond-from(1200px) {
+      visibility: hidden;
+    }
+  }
 }

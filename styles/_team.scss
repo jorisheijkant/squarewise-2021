@@ -1,0 +1,69 @@
+.team {
+  @include wh(100%, auto);
+  max-width: $max-width;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $spacing;
+  align-items: start;
+  justify-items: center;
+  padding: #{1 * $spacing} #{2 * $spacing};
+
+  @include respond-until($screen-xs) {
+    padding: #{0 * $spacing};
+    grid-template-columns: 1fr;
+    grid-gap: #{0.5 * $spacing};
+  }
+
+  @include respond-between($screen-xs, $screen-sm) {
+    padding: #{1 * $spacing};
+    grid-template-columns: 1fr;
+    grid-gap: #{1 * $spacing};
+  }
+
+  @include respond-between($screen-sm, $screen-md) {
+    padding: #{1 * $spacing};
+    grid-template-columns: 1fr 1fr;
+    grid-gap: #{1 * $spacing};
+  }
+
+  .member {
+    @include wh(100%, auto);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: #{0.5 * $spacing};
+    background: rgba($lightblue, 0.5);
+    border: none;
+    border-radius: 8px;
+
+    @include respond-until($screen-xs) {
+      border-radius: 0;
+    }
+
+    .member-image {
+      @include wh(100%, auto);
+      max-width: 300px;
+      align-self: center;
+      border-radius: 8px;
+      border: none;
+      margin: 0 0 #{0.25 * $spacing};
+
+      @include respond-until($screen-xs) {
+        max-width: 500px;
+      }
+    }
+
+    .member-name {
+      align-self: center;
+      text-align: center;
+      margin: 0 0 #{0.5 * $spacing};
+    }
+
+    .member-subheading {
+      margin: 0;
+      font-weight: bold;
+    }
+  }
+}

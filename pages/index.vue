@@ -1,7 +1,7 @@
 <template>
     <div class="container index">
         <!-- Top nav -->
-        <navigation/>
+        <navigation />
 
         <!-- arrow icon -->
         <nav class="arrow-to-top" @click="scrollToTop()">

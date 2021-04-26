@@ -8,6 +8,7 @@
                 <div class="nav-logo">
                     <img class="logo-img" src="../assets/img/logo.png" alt="Squarewise logo">
                 </div>
+
                 <div class="menu-toggle" @click="toggleMenu()">
                     <img class="burger-icon" src="../assets/img/burger.png" alt="">
                 </div>

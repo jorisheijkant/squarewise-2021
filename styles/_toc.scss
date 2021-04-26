@@ -1,45 +1,106 @@
 .toc {
   @include wh(100%, auto);
-  max-width: calc(40em + 6rem);
+  max-width: #{0.5 * $max-width};
   padding: $spacing;
   margin: 0 auto;
 
+  @include flex-center();
+  text-align: center;
+
   @include respond-until($screen-xs) {
     padding: #{0.5 * $spacing};
-    max-width: calc(40em + 3rem);
   }
 
   .toc-header {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
     color: $green;
     margin: 0;
   }
 
-  .toc-text {
-    max-width: $max-p-width;
-    margin: 0 0 #{0.5 * $spacing};
+  .toc-hr {
+    @include wh(100%, 1px);
+    border: none;
+    background: $black;
+    margin: #{0.5 * $spacing} 0 #{0.5 * $spacing};
+  }
 
-    p {
-      margin: 0;
+  .outcomes-wrapper {
+    @include wh(100%, auto);
+    @include flex-center();
+    background: #ebebe5;
+    padding: #{0.5 * $spacing} 0 #{0.75 * $spacing};
+    margin: #{0.5 * $spacing} 0;
+
+    .toc-text {
+      @include wh(100%, auto);
+
+      ul {
+        border-top: 1px solid $black;
+        list-style: none;
+      }
+
+      ul li {
+        @include wh(100%, auto);
+        padding: #{0.5 * $spacing} #{0.5 * $spacing};
+        margin-bottom: 0;
+        border-bottom: 1px solid $black;
+      }
+
+      ul li:last-of-type {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
     }
 
-    ul {
-      list-style-position: inside;
+    .toc-header {
+      color: $black;
+      margin-bottom: #{0.5 * $spacing};
     }
+
+
   }
 
   .outputs-wrapper {
+    @include wh(100%, auto);
+    background: #c5e0da;
+    padding: #{0.5 * $spacing};
     margin: #{0.5 * $spacing} 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: #{0.25 * $spacing};
+
+    .toc-header {
+      color: $black;
+      margin-bottom: #{0.5 * $spacing};
+    }
+
+    .outputs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 0;
+      grid-row-gap: $spacing;
+
+      @include respond-until($screen-sm) {
+        grid-template-columns: 1fr;
+      }
+    }
 
     .output {
       @include wh(100%, auto);
-      background: $grey;
-      border-radius: 8px;
-      padding: #{0.25 * $spacing};
+      padding: #{0.5 * $spacing};
+      border: 1px solid $black;
 
+      h4 {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        margin-bottom: #{0.25 * $spacing};
+      }
+    }
+
+    .output:nth-last-of-type(odd) {
+      border-left: none;
+
+      @include respond-until($screen-sm) {
+        border-left: 1px solid $black;
+      }
     }
   }
 }

@@ -1,0 +1,193 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "TeamMember",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Irure eiusmod do veniam. Velit laborum ut Lorem irure consectetur aute proident aliquip magna voluptate et excepteur. Ut consequat nisi ea tempor sint ipsum laboris reprehenderit exercitation.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Do officia id ipsum velit sit ut qui aliqua et ut consectetur consectetur. Adipisicing enim officia mollit cupidatat commodo occaecat reprehenderit.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "name": "utilize cutting-edge models",
+        "back": [
+          {
+            "type": "paragraph",
+            "text": "Lorem eu consectetur nisi est aute commodo quis nisi anim officia qui sit nisi. Consequat do magna duis cupidatat.",
+            "spans": []
+          }
+        ],
+        "forward": [
+          {
+            "type": "paragraph",
+            "text": "Laboris qui dolore reprehenderit. Ipsum Lorem cillum mollit fugiat excepteur aliquip aliquip non mollit ipsum sit commodo labore veniam.",
+            "spans": []
+          }
+        ],
+        "core": [
+          {
+            "type": "paragraph",
+            "text": "Consequat ea tempor et deserunt in nisi sit dolor quis pariatur cupidatat tempor anim fugiat ullamco. Est reprehenderit aute tempor veniam consectetur sit officia laborum est qui proident proident ipsum ipsum enim. Exercitation minim voluptate occaecat magna deserunt ad duis tempor fugiat.",
+            "spans": []
+          }
+        ],
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "name": "target killer portals",
+        "back": [
+          {
+            "type": "paragraph",
+            "text": "Veniam deserunt veniam veniam commodo consectetur aliquip anim eiusmod amet id sunt officia id tempor. Ullamco velit esse id officia non irure ullamco ut duis ea reprehenderit do et veniam nulla. Ex ut incididunt et est nostrud pariatur occaecat veniam.",
+            "spans": []
+          }
+        ],
+        "forward": [
+          {
+            "type": "paragraph",
+            "text": "Laboris duis occaecat aute. Eu est ipsum nulla pariatur in ullamco fugiat commodo elit do.",
+            "spans": []
+          }
+        ],
+        "core": [
+          {
+            "type": "paragraph",
+            "text": "Consequat anim commodo dolore duis eiusmod incididunt eu irure dolore ea aliquip deserunt.",
+            "spans": []
+          }
+        ],
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "name": "seize open-source web services",
+        "back": [
+          {
+            "type": "paragraph",
+            "text": "Est mollit ipsum in occaecat nisi id. Nisi pariatur nisi Lorem cupidatat do amet excepteur incididunt ullamco aliquip voluptate do. Consectetur sit duis cupidatat.",
+            "spans": []
+          }
+        ],
+        "forward": [
+          {
+            "type": "paragraph",
+            "text": "Sit dolor ex ex. Mollit ipsum ex velit ex non.",
+            "spans": []
+          }
+        ],
+        "core": [
+          {
+            "type": "paragraph",
+            "text": "Enim id occaecat sit qui reprehenderit excepteur tempor ea ad proident Lorem nostrud officia fugiat nisi. Consequat eiusmod amet reprehenderit eu ad veniam minim. Nostrud elit excepteur occaecat anim magna est laborum.",
+            "spans": []
+          }
+        ],
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "name": "incentivize value-added schemas",
+        "back": [
+          {
+            "type": "paragraph",
+            "text": "Non veniam et fugiat amet quis ad aute Lorem sint qui nulla pariatur.",
+            "spans": []
+          }
+        ],
+        "forward": [
+          {
+            "type": "paragraph",
+            "text": "Quis consequat eu Lorem ea deserunt cillum eu culpa reprehenderit esse. Aliqua deserunt Lorem fugiat sint enim dolor culpa ut adipisicing amet ea cupidatat fugiat pariatur magna.",
+            "spans": []
+          }
+        ],
+        "core": [
+          {
+            "type": "paragraph",
+            "text": "Lorem do cupidatat tempor do laboris commodo eu ad incididunt mollit minim veniam proident Lorem. Reprehenderit tempor commodo nisi laborum do nisi ipsum elit sit.",
+            "spans": []
+          }
+        ],
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "name": "engage dynamic experiences",
+        "back": [
+          {
+            "type": "paragraph",
+            "text": "Sint deserunt officia est elit do pariatur proident mollit quis duis ea adipisicing veniam. Magna sint exercitation magna labore reprehenderit esse voluptate. Ipsum sit cillum enim irure elit aute exercitation quis deserunt nostrud.",
+            "spans": []
+          }
+        ],
+        "forward": [
+          {
+            "type": "paragraph",
+            "text": "Eiusmod aute voluptate ullamco cillum tempor occaecat enim qui laboris deserunt incididunt reprehenderit aliquip. Cupidatat reprehenderit dolor ad incididunt.",
+            "spans": []
+          }
+        ],
+        "core": [
+          {
+            "type": "paragraph",
+            "text": "Veniam voluptate non mollit tempor qui et eu aute voluptate eiusmod fugiat elit ipsum. Proident aute dolor deserunt pariatur est laboris est.",
+            "spans": []
+          }
+        ],
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?w=900&h=500&fit=crop"
+        }
+      }
+    ],
+    "slice_type": "team_member"
+  }
+]

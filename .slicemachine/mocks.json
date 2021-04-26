@@ -98,5 +98,30 @@
       }
     }
   },
-  "EmbedBlock": {}
+  "EmbedBlock": {},
+  "TeamMember": {
+    "items": {
+      "name": {
+        "content": null
+      },
+      "back": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "forward": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "core": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  }
 }
