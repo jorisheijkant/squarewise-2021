@@ -1,9 +1,6 @@
 //base typography, only html elements, no specific classes
 
-// base size, equals 1em.
-$base-size: 8;
-$base-size-px: 8px;
-$default-line-height: 1.2em;
+// Maximum width for a paragraph
 
 html, body {
   font-size: $base-size+px;
@@ -21,6 +18,11 @@ input {
 p, a {
   @include typogram($body);
   font-weight: 500;
+}
+
+a:visited {
+  color: $black;
+  text-decoration: underline;
 }
 
 ul, ol {

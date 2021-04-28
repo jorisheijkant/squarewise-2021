@@ -5,8 +5,15 @@
     justify-content: flex-start;
   }
 
+
+  .c-carousel__card__title h3 {
+    @include typogram($body);
+    margin-bottom: #{0.25 * $spacing};
+  }
+
   .c-carousel__card::after {
-    background: #fce1d1;
+    background: $grey;
+    border-radius: 0px;
   }
 
   .c-carousel__paddleNav {

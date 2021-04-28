@@ -10,20 +10,25 @@
                 </div>
 
                 <div class="menu-toggle" @click="toggleMenu()">
-                    <img class="burger-icon" src="../assets/img/burger.png" alt="">
+                    <img class="burger-icon" src="../assets/img/menu-icon.png" alt="">
                 </div>
             </div>
             <div class="progress-bar">
                 <div class="bar" :style="{'width': progress}"></div>
             </div>
         </div>
-        <div class="menu" :class="{'open': menu}">
-            <h2 class="menu__heading">Snel naar</h2>
 
-            <div class="menu__items">
-                <button @click="goTo(chapter.slug)" class="menu-item" v-for="(chapter, index) in chapters" :key="`menu-chapter-${index}`">
-                   {{chapter.title}}
-                </button>
+        <div class="menu" :class="{'open': menu}" @click="toggleMenu()">
+            <div class="menu-wrapper" @click.stop>
+                <img class="menu-close" src="../assets/img/cross.svg" alt="close menu" @click.stop="toggleMenu()">
+
+                <h2 class="menu__heading">Snel naar</h2>
+
+                <div class="menu__items">
+                    <button @click="goTo(chapter.slug)" class="menu-item" v-for="(chapter, index) in chapters" :key="`menu-chapter-${index}`">
+                        {{chapter.title}}
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -49,11 +54,23 @@ export default {
     methods: {
         toggleMenu() {
             this.menu = !this.menu;
+            let body = document.querySelector('body');
+            if(this.menu) {
+                body.classList.add('no-scroll');
+            } else {
+                body.classList.remove('no-scroll');
+            }
         },
 
         goTo(item) {
             this.menu = false;
             this.$scrollTo(`.${item}`);
+            let body = document.querySelector('body');
+            if(this.menu) {
+                body.classList.add('no-scroll');
+            } else {
+                body.classList.remove('no-scroll');
+            }
         },
 
         updateProgressIndicator() {
@@ -62,6 +79,10 @@ export default {
             let height = documentElement.scrollHeight - documentElement.clientHeight;
             this.progress = (windowScroll / height) * 100 + "%";
         }
+    },
+
+    beforeDestroy() {
+        window.removeEventListener("scroll", this.updateProgressIndicator)
     },
 
     computed: {

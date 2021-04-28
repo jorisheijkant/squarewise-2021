@@ -5,10 +5,11 @@ export const state = () => ({
 });
 
 export const mutations = {
-    addChapter(state, {title: title, slug: slug}) {
+    addChapter(state, {title: title, slug: slug, image: image}) {
         state.chapters.push({
             slug: slug,
-            title: title
+            title: title,
+            image: image
         });
     }
 }

@@ -2,12 +2,14 @@
   @include wh(100%, auto);
   max-width: #{0.5 * $max-width};
   padding: $spacing;
-  margin: 0 auto;
+  margin: $spacing auto;
 
   @include flex-center();
   text-align: center;
+  border: 1px solid $green;
 
   @include respond-until($screen-xs) {
+    width: 95%;
     padding: #{0.5 * $spacing};
   }
 
@@ -28,7 +30,7 @@
   .outcomes-wrapper {
     @include wh(100%, auto);
     @include flex-center();
-    background: #ebebe5;
+    background: $grey;
     padding: #{0.5 * $spacing} 0 #{0.75 * $spacing};
     margin: #{0.5 * $spacing} 0;
 

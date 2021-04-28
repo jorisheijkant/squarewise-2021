@@ -33,8 +33,8 @@
     }
   }
 
-  .lead {
-    max-width: $max-p-width;
+  .lead p {
+    max-width: 40em;
   }
 
   .lead a {
@@ -43,6 +43,6 @@
 }
 
 .section.heading.onze-transitie-naar-een-horizontale-steward-owned-organisatie {
-  background: $yellow;
+  background: $grey;
   color: $black;
 }

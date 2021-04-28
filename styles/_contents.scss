@@ -1,0 +1,66 @@
+.contents {
+  @include wh(100%, auto);
+  max-width: $max-width;
+  margin: 0 auto;
+  @include flex-center();
+  padding: $spacing;
+
+  @include respond-until($screen-xs) {
+    padding: #{0.5 * $spacing};
+  }
+
+  .contents-section {
+    @include wh(100%, auto);
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $spacing;
+    align-items: start;
+
+    margin: $spacing 0;
+
+    @include respond-until($screen-xs) {
+      margin: #{0.5 * $spacing} 0;
+      grid-gap: #{0.5 * $spacing};
+    }
+
+    @include respond-until($screen-sm) {
+      grid-template-columns: 1fr;
+    }
+
+    @include respond-between($screen-sm, $screen-md) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .chapter-teaser {
+      @include wh(100%, auto);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      background: $grey;
+      cursor: pointer;
+
+      .image {
+        @include wh(100%, 300px);
+        object-fit: cover;
+
+        @include respond-until($screen-xs) {
+          @include wh(100%, 250px);
+        }
+      }
+
+      .content {
+        @include wh(100%, auto);
+        padding: #{0.5 * $spacing};
+      }
+
+      .content .chapter-title {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        text-decoration: underline;
+      }
+    }
+  }
+}

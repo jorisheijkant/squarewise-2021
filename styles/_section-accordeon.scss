@@ -2,7 +2,7 @@
   color: $black;
 
   .ps__wrap {
-    max-width: calc(40em + calc(var(--c-padding)) + 4em);
+    max-width: calc(70em + calc(var(--c-padding)) + 4em);
   }
 
   .ps__main.grid {
@@ -10,11 +10,14 @@
   }
 
   .c-accordion__heading button {
-    background: #fce1d1;
+    background: $grey;
+    border-radius: 0 !important;
+    font-weight: 700;
   }
 
   .c-accordion__panel.c-accordion__panel {
-    background: #fce1d1;
+    background: $grey;
+    border-radius: 0 !important;
 
     @include respond-until($screen-xs) {
       padding-right: var(--c-padding);

@@ -102,7 +102,7 @@ export default {
 
                 // Check if touch device, otherwise use mouse
                 if ('ontouchend' in window) {
-                    console.log('Skipping mouse watcher, has touchscreen');
+                    // console.log('Skipping mouse watcher, has touchscreen');
                 } else {
                     console.log('no touch screen, setting up mouse watcher');
                     header.addEventListener('mousemove', throttle(function (event) {
@@ -118,9 +118,9 @@ export default {
         },
 
         setUpGyro() {
-            console.log('setting up gyro...');
+            // console.log('setting up gyro...');
             if ('ontouchend' in window) {
-                this.debug = true;
+                // this.debug = true;
 
                 if (this.$refs && this.$refs.headerWrapper && !this.gyro) {
                     let panel = this.$refs.overlayPanel;
@@ -132,7 +132,7 @@ export default {
                         this.y = y;
                     }
 
-                    console.log('has touchscreen and user touched header, setting up gyroscope watcher');
+                    // console.log('has touchscreen and user touched header, setting up gyroscope watcher');
 
                     let setGyro = function (e) {
                         const {beta, gamma} = e;

@@ -22,22 +22,25 @@
 
     .logo-img {
       @include wh(60px, auto);
+      transform: translateY(2px);
     }
   }
 
   .menu-toggle {
     @include flex-center();
+    cursor: pointer;
+
     .burger-icon {
-      @include wh(30px);
+      @include wh(40px, 50px);
     }
   }
 }
 
 .progress-bar {
-  @include wh(100%, 2px);
+  @include wh(100%, 3px);
 
   .bar {
-    @include wh(2px, 2px);
+    @include wh(2px, 3px);
     background: $lightblue;
   }
 }

@@ -1,16 +1,33 @@
 .menu {
   position: fixed;
-  @include wh(100vw, calc(100vh - 50px));
-  top: 50px;
+  @include wh(100vw, 100vh);
+  top: 0;
   left: 0;
-
-  transform: translateY(100vh);
-
-  background: $white;
   z-index: 5;
-  padding: $spacing;
 
-  transition: transform 0.3s ease;
+  transform: translateX(100vw);
+  background: rgba($black, 0);
+  transition: all 0.3s ease;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  .menu-wrapper {
+    @include wh(100%, 100vh);
+    max-width: 400px;
+    background: $white;
+    padding: $spacing;
+
+    position: relative;
+
+    .menu-close {
+      @include wh(25px);
+      position: absolute;
+      right: #{0.5 * $spacing};
+      top: #{0.5 * $spacing};
+    }
+  }
 
   &__heading {
     font-size: 2.6rem;
@@ -26,10 +43,12 @@
     .menu-item {
       text-align: left;
       text-decoration: underline;
+      font-size: 1rem;
     }
   }
 }
 
 .menu.open {
   transform: translateY(0);
+  background: rgba($black, 0.3);
 }

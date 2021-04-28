@@ -59,6 +59,10 @@ $transition: clip-path 0.2s ease;
 
     transition: $transition;
 
+    .title {
+      margin-bottom: #{0.25 * $spacing};
+    }
+
     @include respond-until($screen-sm) {
       width: 100%;
       height: 50vh;

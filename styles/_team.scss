@@ -1,6 +1,7 @@
 .team {
   @include wh(100%, auto);
   max-width: $max-width;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: $spacing;
@@ -35,8 +36,6 @@
 
     padding: #{0.5 * $spacing};
     background: rgba($lightblue, 0.5);
-    border: none;
-    border-radius: 8px;
 
     @include respond-until($screen-xs) {
       border-radius: 0;
@@ -46,8 +45,6 @@
       @include wh(100%, auto);
       max-width: 300px;
       align-self: center;
-      border-radius: 8px;
-      border: none;
       margin: 0 0 #{0.25 * $spacing};
 
       @include respond-until($screen-xs) {

@@ -34,7 +34,8 @@ export default {
         // Push to store as chapter if it's not a subheading
         if (this.slice && this.slice.primary && this.slice.primary.headingType === 'sectie') {
             let title = this.slice.primary.title[0].text;
-            this.addChapter({title: title, slug: this.slugify(title)})
+            let image = this.slice.primary.image ? this.slice.primary.image.url : null;
+            this.addChapter({title: title, slug: this.slugify(title), image: image})
         }
     },
 

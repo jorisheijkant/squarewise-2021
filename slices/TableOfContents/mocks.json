@@ -1,0 +1,20 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "TableOfContents",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Duis ad ipsum irure cillum eu cupidatat aute officia. Mollit excepteur sunt duis laboris Lorem.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [],
+    "slice_type": "table_of_contents"
+  }
+]

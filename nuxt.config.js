@@ -1,11 +1,17 @@
 // require('dotenv').config();
 let routerBase = './';
+let ogUrl = '';
 
-if(process.env.NODE_ENV === 'demo') {
+if (process.env.NODE_ENV === 'demo') {
     routerBase = '/demo/squarewise/';
-} else if(process.env.NODE_ENV === 'development') {
+    ogUrl = 'https://api.jorisheijkant.nl/demo/squarewise/';
+} else if (process.env.NODE_ENV === 'development') {
     routerBase = '/';
+    ogUrl = 'https://api.jorisheijkant.nl/demo/squarewise/';
 }
+
+let title = "Squarewise impactrapportage 2020";
+let description = "Squarewise is inmiddels twee jaar een sociale onderneming. Daar zijn we trots op! Aan de hand van deze impactrapportage blikken we terug op onze gemaakte impact en delen we geleerde lessen.";
 
 export default {
     ssr: true,
@@ -13,25 +19,50 @@ export default {
     target: 'static',
 
     head: {
-        title: 'squarewise-annual',
+        title: title,
         htmlAttrs: {
-            lang: 'en'
+            lang: "nl",
+            prefix: "og: http://ogp.me/ns#"
         },
-        meta: [{
-            charset: 'utf-8'
-        }, {
-            name: 'viewport',
-            content: 'width=device-width, initial-scale=1'
-        }, {
-            hid: 'description',
-            name: 'description',
-            content: ''
-        }],
-        link: [{
-            rel: 'icon',
-            type: 'image/x-icon',
-            href: '/favicon.ico'
-        }],
+        meta: [
+            {charset: 'utf-8'},
+            {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+            {hid: 'description', name: 'description', content: description},
+            {hid: 'ogtitle', name: 'og:title', content: title},
+            {hid: 'ogdescription', name: 'og:description', content: description},
+            {hid: 'ogimage', name: 'og:image', content: `${ogUrl}thumbnail.jpg`},
+            {hid: 'ogurl', name: 'og:url', content: ogUrl},
+            {hid: 'ogsitename', name: 'og:site_name', content: title},
+            {hid: 'twittercard', name: 'twitter:card', content: 'summary_large_image'},
+            {hid: 'twittersite', name: 'twitter:site', content: '@Squarewise'}
+        ],
+        link: [
+            {
+                rel: 'icon',
+                type: 'image/x-icon',
+                href: '/favicon.ico'
+            },
+            {
+                rel: 'apple-touch-icon',
+                sizes: '180x180',
+                href: '/apple-touch-icon.png'
+            },
+            {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '32x32',
+                href: '/favicon-32x32.png'
+            },
+            {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '16x16',
+                href: '/favicon-16x16.png'
+            },
+            {
+                rel: 'manifest',
+                href: '/site.webmanifest'
+            }],
         script: [{
             "src": "https://cdn.polyfill.io/v2/polyfill.min.js?features=Element.prototype.classList"
         }, {

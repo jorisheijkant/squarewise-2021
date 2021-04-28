@@ -7,6 +7,8 @@ $typogram-names: (h1,h2,h3,h4,body,header,button,quote,caption,lead,label,dropca
 $base-size: 10;
 $base-size-px: 10px;
 $default-line-height: 1.2em;
+$max-p-width: 70em;
+
 
 // define breakpoints used for responsive typography
 // TAKEN FROM BREAKPOINTS FILE
@@ -63,10 +65,10 @@ $h3: (
 // h4
 $h4-font-family: $source;
 $h4-font-sizes: (
-        null  : (get-rems(20), 1.1),
-        small : (get-rems(20), 1.1),
-        medium: (get-rems(20), 1.1),
-        large : (get-rems(20), 1.1),
+        null  : (get-rems(18), 1.1),
+        small : (get-rems(18), 1.1),
+        medium: (get-rems(18), 1.1),
+        large : (get-rems(18), 1.1),
 );
 $h4: (
         style : $h4-font-family,
@@ -103,10 +105,10 @@ $h6: (
 // Body
 $body-font-family: $source;
 $body-font-sizes: (
-        null  : (get-rems(14), 1.15),
-        small : (get-rems(14), 1.15),
-        medium: (get-rems(16), 1.2),
-        large : (get-rems(16), 1.2),
+        null  : (get-rems(11), 1.35),
+        small : (get-rems(11), 1.35),
+        medium: (get-rems(12), 1.4),
+        large : (get-rems(12), 1.4),
 );
 $body: (
         style : $body-font-family,

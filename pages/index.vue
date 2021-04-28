@@ -42,19 +42,13 @@ export default {
         checkQuery() {
             if(this.$route && this.$route.query && this.$route.query.h) {
                 let chapter = this.$route.query.h;
+
+                // Ugly little timeout to prevent DOM rendering issues
                 setTimeout(() => {
                     this.$scrollTo(`.${chapter}`, {
                         duration: 0
                     })
                 }, 300);
-                // if(this.chapters && this.chapters.length > 0) {
-                //     console.log(this.chapters);
-                //     let chapter = this.chapters.find(c => c.slug === this.$route.query.h);
-                //     if(chapter) {
-                //         console.log('chapter found', chapter.slug);
-                //         this.$scrollTo(`.${chapter.slug}`)
-                //     }
-                // }
             }
         }
     },
@@ -68,7 +62,7 @@ export default {
                 },
                 {
                     rel: 'stylesheet',
-                    href: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap'
+                    href: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap'
                 }
             ]
         }
