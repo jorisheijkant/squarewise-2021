@@ -22,6 +22,7 @@
     "nuxt-sm": "^0.0.6",
     "prismic-javascript": "^3.0.2",
     "vue-essential-slices": "file:./essential-slices",
+    "vue-lazyload": "^1.3.3",
     "vue-scrollto": "^2.20.0",
     "vue-slicezone": "^0.0.30"
   },

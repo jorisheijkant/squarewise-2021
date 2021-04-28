@@ -20,7 +20,7 @@ input {
 
 p, a {
   @include typogram($body);
-  font-weight: 300;
+  font-weight: 500;
 }
 
 ul, ol {

@@ -1,7 +1,7 @@
 <template>
     <section class="section team">
         <div class="member" v-for="(member, index) in slice.items" :key="`member-${index}`">
-            <prismic-image class="member-image" :class="{'empty': !member.image.url}" :field="member.image" />
+            <img class="member-image" v-if="member.image && member.image.url" v-lazy="member.image.url" :alt="`Portret van ${member.name}`" />
             <div class="member-bottom">
                 <h4 class="member-name">{{member.name}}</h4>
                 <p class="member-subheading">Terugblik</p>

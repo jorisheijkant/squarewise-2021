@@ -9,18 +9,27 @@
       "title": [
         {
           "type": "paragraph",
-          "text": "Anim officia eiusmod aliquip mollit tempor consectetur nostrud.",
+          "text": "Minim laborum ea labore anim laborum nulla deserunt laboris est proident esse irure voluptate. Irure nostrud ipsum ea aliquip quis nulla.",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Lorem enim occaecat Lorem culpa et irure irure cillum amet laborum duis esse dolor. Nulla et nisi fugiat. Proident Lorem id ut exercitation elit commodo non ea proident non mollit.",
+          "text": "Quis sunt velit ut anim ullamco laboris incididunt ea nostrud enim laborum.",
           "spans": []
         }
       ],
-      "headingType": "sectie"
+      "headingType": "subsectie",
+      "image": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+      }
     },
     "items": [],
     "slice_type": "chapter_heading"

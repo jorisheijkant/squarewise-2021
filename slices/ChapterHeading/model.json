@@ -39,6 +39,15 @@
             "default_value": "sectie"
           },
           "type": "Select"
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "id": "image",
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          }
         }
       },
       "items": {}

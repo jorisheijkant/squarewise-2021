@@ -2,12 +2,14 @@
   {
     "name": "prismic-preview",
     "path": "/preview",
-    "component": "/Users/joris/Documents/dev/2021/squarewise-annual/.nuxt-storybook/prismic/pages/preview.vue"
+    "component": "/Users/joris/Documents/dev/2021/squarewise-annual/.nuxt-storybook/prismic/pages/preview.vue",
+    "_name": "_89e707f2"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/joris/Documents/dev/2021/squarewise-annual/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_a132cddc"
   }
 ]

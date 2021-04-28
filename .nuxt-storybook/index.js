@@ -18,6 +18,7 @@ import nuxt_plugin_vuescrollto_29f48d0e from 'nuxt_plugin_vuescrollto_29f48d0e' 
 import nuxt_plugin_smresolver_42d5630c from 'nuxt_plugin_smresolver_42d5630c' // Source: ./prismic/sm-resolver.js (mode: 'all')
 import nuxt_plugin_prismic_2b220c99 from 'nuxt_plugin_prismic_2b220c99' // Source: ./prismic/plugins/prismic.js (mode: 'all')
 import nuxt_plugin_prismiccomponents_2561dc32 from 'nuxt_plugin_prismiccomponents_2561dc32' // Source: ./prismic/plugins/prismic-components.js (mode: 'all')
+import nuxt_plugin_lazyload_10f2b7b2 from 'nuxt_plugin_lazyload_10f2b7b2' // Source: ../plugins/lazyload.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -225,6 +226,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_prismiccomponents_2561dc32 === 'function') {
     await nuxt_plugin_prismiccomponents_2561dc32(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_lazyload_10f2b7b2 === 'function') {
+    await nuxt_plugin_lazyload_10f2b7b2(app.context, inject)
   }
 
   // Lock enablePreview in context

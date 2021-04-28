@@ -3,7 +3,7 @@ $transition: clip-path 0.2s ease;
 .header {
   @include wh(100%, auto);
   @include flex-center();
-  min-height: calc(100vh - 50px);
+  min-height: 100vh;
   position: relative;
 
   .panel {
@@ -19,17 +19,19 @@ $transition: clip-path 0.2s ease;
 
     .mobile-image {
       width: 100%;
-      height: calc(50vh - 25px);
+      height: 50vh;
       object-fit: contain;
       background: #FFFFFF;
       @include respond-from($screen-sm) {
         display: none;
       }
+
+      transition: $transition;
     }
 
     .desktop-image {
       width: 50%;
-      height: calc(100vh - 50px);
+      height: 100vh;
       object-fit: contain;
       background: #FFFFFF;
       @include respond-until($screen-sm) {
@@ -59,15 +61,15 @@ $transition: clip-path 0.2s ease;
 
     @include respond-until($screen-sm) {
       width: 100%;
-      height: calc(50vh - 50px);
-      top: calc(50vh - 25px);
+      height: 50vh;
+      top: 50vh;
 
       padding: #{0.5 * $spacing};
     }
 
     @include respond-from($screen-sm) {
       width: 50%;
-      height: calc(100vh - 50px);
+      height: 100vh;
       left: 50%;
     }
   }
@@ -81,5 +83,25 @@ $transition: clip-path 0.2s ease;
     color: $white;
     background: transparent;
     pointer-events: none;
+  }
+
+  .panel.gyro-tester {
+    z-index: 10;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @include respond-from($screen-sm) {
+      display: none;
+    }
+
+    p {
+      background: $white;
+      color: $black;
+      border: 1px solid;
+      padding: 3px;
+    }
   }
 }

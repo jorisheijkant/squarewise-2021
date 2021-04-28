@@ -41,7 +41,9 @@ export default {
 
     css: ["essential-slices/src/styles/styles.scss", "~/styles/style.scss"],
 
-    plugins: [],
+    plugins: [
+        {src: '~/plugins/lazyload.js', ssr: false}
+    ],
 
     components: true,
 
