@@ -63,6 +63,26 @@ $transition: clip-path 0.2s ease;
       margin-bottom: #{0.25 * $spacing};
     }
 
+    .scroll-helper {
+      position: absolute;
+      bottom: $spacing;
+      animation: hobble 2.5s ease-in-out infinite;
+
+      @include respond-until($screen-sm) {
+        display: none;
+      }
+
+      .scroll-helper-text {
+        margin-bottom: 0;
+        font-size: 1rem;
+      }
+
+      .scroll-helper-icon {
+        margin-bottom: 0;
+        transform: translateY(-3px);
+      }
+    }
+
     @include respond-until($screen-sm) {
       width: 100%;
       height: 50vh;
@@ -107,5 +127,17 @@ $transition: clip-path 0.2s ease;
       border: 1px solid;
       padding: 3px;
     }
+  }
+}
+
+@keyframes hobble {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

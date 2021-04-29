@@ -1,6 +1,6 @@
 <template>
     <section class="ps section heading" :class="slug">
-        <img v-if="slice.primary && slice.primary.image && slice.primary.image.url" class="image" v-lazy="slice.primary.image.url" alt="">
+        <img width="100%" height="auto" v-if="slice.primary && slice.primary.image && slice.primary.image.url" class="image" v-lazy="slice.primary.image.url" alt="">
         <h2 class="title" v-if="slice.primary.headingType === 'sectie'">{{ $prismic.asText(slice.primary.title) }}</h2>
         <h3 class="title subheader" v-if="slice.primary.headingType === 'subsectie'">
             {{ $prismic.asText(slice.primary.title) }}</h3>

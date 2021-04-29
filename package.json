@@ -10,7 +10,8 @@
     "slicemachine": "start-slicemachine --port 9999",
     "storybook": "nuxt storybook",
     "build-storybook": "nuxt storybook build",
-    "deploy-test": "cross-env NODE_ENV=demo nuxt generate && rsync -arv ~/documents/dev/2021/squarewise-annual/dist/ joris@api.jorisheijkant.nl:/var/www/html/demo/squarewise/"
+    "deploy-test": "cross-env NODE_ENV=demo nuxt generate && rsync -arv ~/documents/dev/2021/squarewise-annual/dist/ joris@api.jorisheijkant.nl:/var/www/html/demo/squarewise/",
+    "generate-prod": "cross-env NODE_ENV=production nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/prismic": "^1.2.6",
@@ -27,6 +28,7 @@
     "vue-slicezone": "^0.0.30"
   },
   "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/storybook": "^3.3.1",
     "babel-loader": "^8.2.2",
     "sass": "1.32.7",

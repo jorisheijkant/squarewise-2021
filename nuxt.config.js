@@ -8,6 +8,9 @@ if (process.env.NODE_ENV === 'demo') {
 } else if (process.env.NODE_ENV === 'development') {
     routerBase = '/';
     ogUrl = 'https://api.jorisheijkant.nl/demo/squarewise/';
+} else if(process.env.NODE_ENV === 'production') {
+    routerBase = '/rapportages/impactrapportage-2020/';
+    ogUrl = 'https://squarewise.com/rapportages/impactrapportage-2020/';
 }
 
 let title = "Squarewise impactrapportage 2020";
@@ -40,28 +43,28 @@ export default {
             {
                 rel: 'icon',
                 type: 'image/x-icon',
-                href: '/favicon.ico'
+                href: 'favicon.ico'
             },
             {
                 rel: 'apple-touch-icon',
                 sizes: '180x180',
-                href: '/apple-touch-icon.png'
+                href: 'apple-touch-icon.png'
             },
             {
                 rel: 'icon',
                 type: 'image/png',
                 sizes: '32x32',
-                href: '/favicon-32x32.png'
+                href: 'favicon-32x32.png'
             },
             {
                 rel: 'icon',
                 type: 'image/png',
                 sizes: '16x16',
-                href: '/favicon-16x16.png'
+                href: 'favicon-16x16.png'
             },
             {
                 rel: 'manifest',
-                href: '/site.webmanifest'
+                href: 'site.webmanifest'
             }],
         script: [{
             "src": "https://cdn.polyfill.io/v2/polyfill.min.js?features=Element.prototype.classList"
@@ -78,7 +81,13 @@ export default {
 
     components: true,
 
-    buildModules: [],
+    buildModules: [
+        "@nuxtjs/google-analytics"
+    ],
+
+    googleAnalytics: {
+        id: "UA-195920783-1"
+    },
 
     modules: [
         ["@nuxtjs/prismic", {

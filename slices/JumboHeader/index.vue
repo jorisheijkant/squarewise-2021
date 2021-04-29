@@ -1,9 +1,9 @@
 <template>
-    <header class="section header" ref="headerWrapper" @click="setUpGyro()">
+    <header class="section header" ref="headerWrapper" @touchstart="setUpGyro()">
         <div class="panel image-panel" ref="imagePanel">
-            <img class="header-image mobile-image" src="../../assets/img/pl-h-m.png" alt="" :style="mobileImageClip">
+            <img class="header-image mobile-image" src="../../assets/img/header_wide.jpg" alt="" :style="mobileImageClip">
             <img class="header-image desktop-image" :style="desktopImageClip"
-                 src="../../assets/img/pl-h-d.png" alt="">
+                 src="../../assets/img/header_desktop.jpg" alt="">
         </div>
 
         <div class="panel color-overlay" ref="overlayPanel"></div>
@@ -17,11 +17,22 @@
         <div class="panel content-panel" :style="contentClip">
             <prismic-rich-text :field="slice.primary.title" class="title"/>
             <prismic-rich-text :field="slice.primary.description"/>
+
+            <div class="scroll-helper">
+                <p class="scroll-helper-text">Scroll verder</p>
+                <p class="scroll-helper-icon">↓</p>
+            </div>
+
         </div>
 
         <div class="panel content-panel-lit">
             <prismic-rich-text :field="slice.primary.title" class="title"/>
             <prismic-rich-text :field="slice.primary.description"/>
+
+            <div class="scroll-helper">
+                <p class="scroll-helper-text">Scroll verder</p>
+                <p class="scroll-helper-icon">↓</p>
+            </div>
         </div>
     </header>
 </template>
@@ -46,7 +57,8 @@ export default {
             y: 30,
             desktopCircle: 20,
             debug: false,
-            gyro: false
+            gyro: false,
+            searchlight: null
         }
     },
 
@@ -103,6 +115,13 @@ export default {
                 // Check if touch device, otherwise use mouse
                 if ('ontouchend' in window) {
                     // console.log('Skipping mouse watcher, has touchscreen');
+                    // console.log('setting searchlight');
+                    // Also set up small wobble animation for people who do not want the gyro to be active
+                    // this.searchlight = setInterval(() => {
+                    //     // console.log('randomizing x&y');
+                    //     this.x = Math.random() * 100;
+                    //     this.y = Math.random() * 100;
+                    // }, 3000);
                 } else {
                     console.log('no touch screen, setting up mouse watcher');
                     header.addEventListener('mousemove', throttle(function (event) {
@@ -119,6 +138,10 @@ export default {
 
         setUpGyro() {
             // console.log('setting up gyro...');
+            // if(this.searchlight) {
+            //     // console.log('clearing searchlight, gyro taking over');
+            //     clearInterval(this.searchlight);
+            // }
             if ('ontouchend' in window) {
                 // this.debug = true;
 

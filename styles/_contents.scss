@@ -44,7 +44,8 @@
 
       .image {
         @include wh(100%, 300px);
-        object-fit: cover;
+        object-fit: contain;
+        background: $green;
 
         @include respond-until($screen-xs) {
           @include wh(100%, 250px);
@@ -61,6 +62,10 @@
         margin-bottom: 0;
         text-decoration: underline;
       }
+    }
+
+    .chapter-teaser:nth-child(5) .image {
+      background: $grey;
     }
   }
 }
