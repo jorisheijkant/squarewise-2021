@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: $spacing;
-    align-items: start;
+    align-items: stretch;
 
     margin: $spacing 0;
 
@@ -54,7 +54,13 @@
 
       .content {
         @include wh(100%, auto);
-        padding: #{0.5 * $spacing};
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        padding: 0 #{0.5 * $spacing};
       }
 
       .content .chapter-title {

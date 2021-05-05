@@ -1,5 +1,5 @@
 <template>
-    <header class="section header" ref="headerWrapper" @touchstart="setUpGyro()">
+    <header class="section header" ref="headerWrapper" @touchstart="setUpGyro()" @click="setUpGyro()">
         <div class="panel image-panel" ref="imagePanel">
             <img class="header-image mobile-image" src="../../assets/img/header_wide.jpg" alt="" :style="mobileImageClip">
             <img class="header-image desktop-image" :style="desktopImageClip"

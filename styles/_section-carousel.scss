@@ -3,16 +3,21 @@
 
   .c-carousel__card {
     justify-content: flex-start;
+    padding-top: 0;
   }
-
 
   .c-carousel__card__title h3 {
     @include typogram($body);
     margin-bottom: #{0.25 * $spacing};
   }
 
+  .c-carousel__card__img {
+    max-width: 200px;
+    margin: #{0.5 * $spacing} auto;
+  }
+
   .c-carousel__card::after {
-    background: $grey;
+    background: #c3dad8;
     border-radius: 0px;
   }
 
