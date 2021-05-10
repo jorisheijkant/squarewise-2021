@@ -18,6 +18,7 @@
 
             <div class="outputs-grid">
                 <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`" class="output">
+                    <prismic-image class="output-image" :field="item.image" />
                     <h4>{{ item.outcomeTitle }}</h4>
                     <prismic-rich-text :field="item.outcomeText" />
 

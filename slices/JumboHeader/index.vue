@@ -1,9 +1,9 @@
 <template>
     <header class="section header" ref="headerWrapper" @touchstart="setUpGyro()" @click="setUpGyro()">
         <div class="panel image-panel" ref="imagePanel">
-            <img class="header-image mobile-image" src="../../assets/img/header_wide.jpg" alt="" :style="mobileImageClip">
+            <img class="header-image mobile-image" src="../../assets/img/header_new_landscape.jpg" alt="" :style="mobileImageClip">
             <img class="header-image desktop-image" :style="desktopImageClip"
-                 src="../../assets/img/header_desktop.jpg" alt="">
+                 src="../../assets/img/header_new_portrait.jpg" alt="">
         </div>
 
         <div class="panel color-overlay" ref="overlayPanel"></div>

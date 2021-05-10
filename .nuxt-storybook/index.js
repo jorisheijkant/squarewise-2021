@@ -18,6 +18,7 @@ import nuxt_plugin_vuescrollto_29f48d0e from 'nuxt_plugin_vuescrollto_29f48d0e' 
 import nuxt_plugin_smresolver_42d5630c from 'nuxt_plugin_smresolver_42d5630c' // Source: ./prismic/sm-resolver.js (mode: 'all')
 import nuxt_plugin_prismic_2b220c99 from 'nuxt_plugin_prismic_2b220c99' // Source: ./prismic/plugins/prismic.js (mode: 'all')
 import nuxt_plugin_prismiccomponents_2561dc32 from 'nuxt_plugin_prismiccomponents_2561dc32' // Source: ./prismic/plugins/prismic-components.js (mode: 'all')
+import nuxt_plugin_googleanalytics_daf856aa from 'nuxt_plugin_googleanalytics_daf856aa' // Source: ./google-analytics.js (mode: 'client')
 import nuxt_plugin_lazyload_10f2b7b2 from 'nuxt_plugin_lazyload_10f2b7b2' // Source: ../plugins/lazyload.js (mode: 'client')
 
 // Component: <ClientOnly>
@@ -79,7 +80,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"script":[{"src":"https:\u002F\u002Fcdn.polyfill.io\u002Fv2\u002Fpolyfill.min.js?features=Element.prototype.classList"},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Ffocus-visible@5.0.2\u002Fdist\u002Ffocus-visible.min.js"}],"style":[]},
+    head: {"title":"Squarewise impactrapportage 2020","htmlAttrs":{"lang":"nl","prefix":"og: http:\u002F\u002Fogp.me\u002Fns#"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Squarewise is inmiddels twee jaar een sociale onderneming. Daar zijn we trots op! Aan de hand van deze impactrapportage blikken we terug op onze gemaakte impact en delen we geleerde lessen."},{"hid":"ogtitle","name":"og:title","content":"Squarewise impactrapportage 2020"},{"hid":"ogdescription","name":"og:description","content":"Squarewise is inmiddels twee jaar een sociale onderneming. Daar zijn we trots op! Aan de hand van deze impactrapportage blikken we terug op onze gemaakte impact en delen we geleerde lessen."},{"hid":"ogimage","name":"og:image","content":"https:\u002F\u002Fapi.jorisheijkant.nl\u002Fdemo\u002Fsquarewise\u002Fthumbnail.jpg"},{"hid":"ogurl","name":"og:url","content":"https:\u002F\u002Fapi.jorisheijkant.nl\u002Fdemo\u002Fsquarewise\u002F"},{"hid":"ogsitename","name":"og:site_name","content":"Squarewise impactrapportage 2020"},{"hid":"twittercard","name":"twitter:card","content":"summary_large_image"},{"hid":"twittersite","name":"twitter:site","content":"@Squarewise"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"favicon.ico"},{"rel":"apple-touch-icon","sizes":"180x180","href":"apple-touch-icon.png"},{"rel":"icon","type":"image\u002Fpng","sizes":"32x32","href":"favicon-32x32.png"},{"rel":"icon","type":"image\u002Fpng","sizes":"16x16","href":"favicon-16x16.png"},{"rel":"manifest","href":"site.webmanifest"}],"script":[{"src":"https:\u002F\u002Fcdn.polyfill.io\u002Fv2\u002Fpolyfill.min.js?features=Element.prototype.classList"},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Ffocus-visible@5.0.2\u002Fdist\u002Ffocus-visible.min.js"}],"style":[]},
 
     store,
     router,
@@ -226,6 +227,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_prismiccomponents_2561dc32 === 'function') {
     await nuxt_plugin_prismiccomponents_2561dc32(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_googleanalytics_daf856aa === 'function') {
+    await nuxt_plugin_googleanalytics_daf856aa(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_lazyload_10f2b7b2 === 'function') {

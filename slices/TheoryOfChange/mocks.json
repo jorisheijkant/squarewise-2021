@@ -9,58 +9,65 @@
       "visionText": [
         {
           "type": "paragraph",
-          "text": "Occaecat qui voluptate sit do incididunt culpa ea commodo velit sit cillum duis.",
+          "text": "Magna pariatur sint tempor qui voluptate duis ex sint duis officia proident adipisicing ipsum aliqua ipsum. Elit reprehenderit veniam eiusmod consequat mollit commodo anim duis aute fugiat sit id Lorem eu.",
           "spans": []
         }
       ],
       "impactText": [
         {
           "type": "paragraph",
-          "text": "Consequat laborum pariatur aute cupidatat est excepteur in. Esse voluptate amet velit ut nulla.",
+          "text": "Excepteur ex cillum ea consectetur proident excepteur mollit ad deserunt laborum est fugiat deserunt consequat Lorem. Elit incididunt minim nisi magna.",
           "spans": []
         }
       ],
       "outcomesText": [
         {
           "type": "paragraph",
-          "text": "Culpa enim aute magna exercitation enim incididunt consequat Lorem esse.",
+          "text": "Labore incididunt amet ad. Ad eiusmod ut laborum cupidatat do veniam pariatur. Ea excepteur fugiat qui reprehenderit.",
           "spans": []
         }
       ]
     },
     "items": [
       {
-        "outcomeTitle": "expedite one-to-one interfaces",
-        "outcomeClassName": "reinvent innovative systems",
+        "outcomeTitle": "implement dynamic web-readiness",
+        "outcomeClassName": "disintermediate one-to-one e-services",
         "outcomeText": [
           {
             "type": "paragraph",
-            "text": "Minim eu labore dolore ea eiusmod reprehenderit. Do exercitation occaecat exercitation cillum ullamco amet proident dolore.",
+            "text": "Dolor reprehenderit amet ea occaecat nostrud adipisicing deserunt occaecat in occaecat quis. Laborum consectetur officia laboris. Occaecat laboris do culpa est fugiat.",
             "spans": []
           }
-        ]
+        ],
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
+        }
       },
       {
-        "outcomeTitle": "recontextualize integrated systems",
-        "outcomeClassName": "generate plug-and-play interfaces",
+        "outcomeTitle": "repurpose virtual networks",
+        "outcomeClassName": "productize magnetic e-markets",
         "outcomeText": [
           {
             "type": "paragraph",
-            "text": "Enim consequat sit sit proident. Tempor proident excepteur pariatur occaecat aliqua velit consequat qui proident velit labore fugiat esse.",
+            "text": "Sit laboris dolore non dolore velit eu amet.",
             "spans": []
           }
-        ]
-      },
-      {
-        "outcomeTitle": "recontextualize dot-com niches",
-        "outcomeClassName": "transition wireless platforms",
-        "outcomeText": [
-          {
-            "type": "paragraph",
-            "text": "In aliqua cupidatat nostrud laborum ex velit eiusmod laborum et aliquip. Anim reprehenderit adipisicing pariatur deserunt anim. Eu culpa consequat sint proident laboris.",
-            "spans": []
-          }
-        ]
+        ],
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
+        }
       }
     ],
     "slice_type": "theory_of_change"

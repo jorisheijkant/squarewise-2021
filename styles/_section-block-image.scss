@@ -1,0 +1,7 @@
+.section.block-image {
+  @include flex-center();
+  .image {
+    max-width: $max-width;
+    margin: $spacing 0;
+  }
+}

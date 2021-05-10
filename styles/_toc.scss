@@ -90,6 +90,11 @@
       padding: #{0.5 * $spacing};
       border: 1px solid $black;
 
+      .output-image {
+        max-width: 160px;
+        margin-bottom: #{0.25 * $spacing};
+      }
+
       h4 {
         text-transform: uppercase;
         font-size: 1.25rem;

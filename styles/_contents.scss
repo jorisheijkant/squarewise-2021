@@ -46,6 +46,7 @@
         @include wh(100%, 300px);
         object-fit: contain;
         background: $green;
+        padding: #{0.5 * $spacing};
 
         @include respond-until($screen-xs) {
           @include wh(100%, 250px);
