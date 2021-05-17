@@ -1,4 +1,5 @@
-# squarewise-annual
+# Squarewise-annual
+This is the repo for the squarewise annual impact report of 2020. It uses Nuxt.js and Prismic.
 
 ## Build Setup
 
@@ -13,8 +14,8 @@ $ yarn dev
 $ yarn build
 $ yarn start
 
-# generate static project
-$ yarn generate
+# generate static files to deploy in production
+$ yarn generate-prod
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

@@ -34,6 +34,7 @@ export default {
             {hid: 'ogtitle', name: 'og:title', content: title},
             {hid: 'ogdescription', name: 'og:description', content: description},
             {hid: 'ogimage', name: 'og:image', content: `${ogUrl}thumbnail.jpg`},
+            {hid: 'image', name: 'image', property: 'og:image', content: `${ogUrl}thumbnail.jpg`},
             {hid: 'ogurl', name: 'og:url', content: ogUrl},
             {hid: 'ogsitename', name: 'og:site_name', content: title},
             {hid: 'twittercard', name: 'twitter:card', content: 'summary_large_image'},
